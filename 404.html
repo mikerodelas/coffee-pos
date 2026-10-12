@@ -254,7 +254,7 @@ pre.code{background:#2A1B12;color:#F6E9DC;padding:14px;border-radius:14px;overfl
 <script>
 /* Coffee POS static client — replaces google.script.run when hosted outside Apps Script. */
 (function () {
-  var BUILD_URL = "";
+  var BUILD_URL = "https://script.google.com/macros/s/AKfycby153XtDTTTrvSMQJHq6W03qPTxljK_qhyZPsC9z8CiwFfjJrmGaADKie7xykqOX26Tsg/exec";
   var KEY = 'cpos_api_url';
   function ls(op, v) { try { return op === 'get' ? localStorage.getItem(KEY) : op === 'set' ? localStorage.setItem(KEY, v) : localStorage.removeItem(KEY); } catch (e) { return null; } }
   var q = null; try { q = new URLSearchParams(location.search).get('api'); } catch (e) {}
